@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.EventLogSource
+  commentId: T:DotNetHelper_Logger.EventLogSource
+  id: EventLogSource
+  parent: DotNetHelper_Logger
+  children:
+  - DotNetHelper_Logger.EventLogSource.Application
+  - DotNetHelper_Logger.EventLogSource.Security
+  - DotNetHelper_Logger.EventLogSource.Setup
+  - DotNetHelper_Logger.EventLogSource.System
+  langs:
+  - csharp
+  - vb
+  name: EventLogSource
+  nameWithType: EventLogSource
+  fullName: DotNetHelper_Logger.EventLogSource
+  type: Enum
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/EventLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: EventLogSource
+    path: ../src/DotNetHelper-Logger/EventLogger.cs
+    startLine: 12
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public enum EventLogSource
+    content.vb: Public Enum EventLogSource
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DotNetHelper_Logger.EventLogSource.Application
+  commentId: F:DotNetHelper_Logger.EventLogSource.Application
+  id: Application
+  parent: DotNetHelper_Logger.EventLogSource
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: EventLogSource.Application
+  fullName: DotNetHelper_Logger.EventLogSource.Application
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/EventLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Application
+    path: ../src/DotNetHelper-Logger/EventLogger.cs
+    startLine: 14
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Application = 0
+    return:
+      type: DotNetHelper_Logger.EventLogSource
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.EventLogSource.Security
+  commentId: F:DotNetHelper_Logger.EventLogSource.Security
+  id: Security
+  parent: DotNetHelper_Logger.EventLogSource
+  langs:
+  - csharp
+  - vb
+  name: Security
+  nameWithType: EventLogSource.Security
+  fullName: DotNetHelper_Logger.EventLogSource.Security
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/EventLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Security
+    path: ../src/DotNetHelper-Logger/EventLogger.cs
+    startLine: 15
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Security = 1
+    return:
+      type: DotNetHelper_Logger.EventLogSource
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.EventLogSource.Setup
+  commentId: F:DotNetHelper_Logger.EventLogSource.Setup
+  id: Setup
+  parent: DotNetHelper_Logger.EventLogSource
+  langs:
+  - csharp
+  - vb
+  name: Setup
+  nameWithType: EventLogSource.Setup
+  fullName: DotNetHelper_Logger.EventLogSource.Setup
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/EventLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Setup
+    path: ../src/DotNetHelper-Logger/EventLogger.cs
+    startLine: 16
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Setup = 2
+    return:
+      type: DotNetHelper_Logger.EventLogSource
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.EventLogSource.System
+  commentId: F:DotNetHelper_Logger.EventLogSource.System
+  id: System
+  parent: DotNetHelper_Logger.EventLogSource
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: EventLogSource.System
+  fullName: DotNetHelper_Logger.EventLogSource.System
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/EventLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: System
+    path: ../src/DotNetHelper-Logger/EventLogger.cs
+    startLine: 17
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: System = 3
+    return:
+      type: DotNetHelper_Logger.EventLogSource
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DotNetHelper_Logger
+  commentId: N:DotNetHelper_Logger
+  name: DotNetHelper_Logger
+  nameWithType: DotNetHelper_Logger
+  fullName: DotNetHelper_Logger
+- uid: DotNetHelper_Logger.EventLogSource
+  commentId: T:DotNetHelper_Logger.EventLogSource
+  parent: DotNetHelper_Logger
+  name: EventLogSource
+  nameWithType: EventLogSource
+  fullName: DotNetHelper_Logger.EventLogSource

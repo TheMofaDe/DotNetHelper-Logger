@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.Interface
+  commentId: N:DotNetHelper_Logger.Interface
+  id: DotNetHelper_Logger.Interface
+  children:
+  - DotNetHelper_Logger.Interface.IFileLogger
+  - DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_Logger.Interface
+  nameWithType: DotNetHelper_Logger.Interface
+  fullName: DotNetHelper_Logger.Interface
+  type: Namespace
+  assemblies:
+  - DotNetHelper-Logger
+references:
+- uid: DotNetHelper_Logger.Interface.IFileLogger
+  commentId: T:DotNetHelper_Logger.Interface.IFileLogger
+  parent: DotNetHelper_Logger.Interface
+  name: IFileLogger
+  nameWithType: IFileLogger
+  fullName: DotNetHelper_Logger.Interface.IFileLogger
+- uid: DotNetHelper_Logger.Interface.ILogger
+  commentId: T:DotNetHelper_Logger.Interface.ILogger
+  parent: DotNetHelper_Logger.Interface
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DotNetHelper_Logger.Interface.ILogger
+- uid: DotNetHelper_Logger.Interface
+  commentId: N:DotNetHelper_Logger.Interface
+  name: DotNetHelper_Logger.Interface
+  nameWithType: DotNetHelper_Logger.Interface
+  fullName: DotNetHelper_Logger.Interface

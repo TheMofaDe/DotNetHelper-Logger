@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.Interface.ILogger
+  commentId: T:DotNetHelper_Logger.Interface.ILogger
+  id: ILogger
+  parent: DotNetHelper_Logger.Interface
+  children:
+  - DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  - DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  - DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  - DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  langs:
+  - csharp
+  - vb
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DotNetHelper_Logger.Interface.ILogger
+  type: Interface
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ILogger
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 21
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: public interface ILogger
+    content.vb: Public Interface ILogger
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  commentId: E:DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  id: OnFailedLogAttempt
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: OnFailedLogAttempt
+  nameWithType: ILogger.OnFailedLogAttempt
+  fullName: DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnFailedLogAttempt
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 23
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: event EventHandler<Exception> OnFailedLogAttempt
+    return:
+      type: System.EventHandler{System.Exception}
+    content.vb: Event OnFailedLogAttempt As EventHandler(Of Exception)
+- uid: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  commentId: P:DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  id: IsLoggingEnable
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: IsLoggingEnable
+  nameWithType: ILogger.IsLoggingEnable
+  fullName: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: IsLoggingEnable
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 24
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: bool IsLoggingEnable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsLoggingEnable As Boolean
+  overload: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable*
+  modifiers.csharp:
+  - get
+  - set
+- uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  id: LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: LogError(Exception, LogSeverity)
+  nameWithType: ILogger.LogError(Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: LogError
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 25
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: void LogError(Exception error, LogSeverity logSeverity = LogSeverity.Error)
+    parameters:
+    - id: error
+      type: System.Exception
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Sub LogError(error As Exception, logSeverity As LogSeverity = LogSeverity.Error)
+  overload: DotNetHelper_Logger.Interface.ILogger.LogError*
+- uid: DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  id: Log(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Log(String, LogSeverity)
+  nameWithType: ILogger.Log(String, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.Log(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Log
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 26
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: void Log(string content, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: content
+      type: System.String
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Sub Log(content As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.Interface.ILogger.Log*
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  id: ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: ConsoleAndLog(String, LogSeverity)
+  nameWithType: ILogger.ConsoleAndLog(String, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ConsoleAndLog
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 27
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: void ConsoleAndLog(string content, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: content
+      type: System.String
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Sub ConsoleAndLog(content As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog*
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  id: ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: ConsoleAndLog(Exception, LogSeverity)
+  nameWithType: ILogger.ConsoleAndLog(Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ConsoleAndLog
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 28
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: void ConsoleAndLog(Exception error, LogSeverity logSeverity = LogSeverity.Error)
+    parameters:
+    - id: error
+      type: System.Exception
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Sub ConsoleAndLog(error As Exception, logSeverity As LogSeverity = LogSeverity.Error)
+  overload: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog*
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  id: ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: ConsoleWrite(String, LogSeverity)
+  nameWithType: ILogger.ConsoleWrite(String, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ConsoleWrite
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 29
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: void ConsoleWrite(string message, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: message
+      type: System.String
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Sub ConsoleWrite(message As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite*
+- uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  id: LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: LogError(String, Exception, LogSeverity)
+  nameWithType: ILogger.LogError(String, Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.LogError(System.String, System.Exception, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: LogError
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 30
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: void LogError(string notes, Exception ex, LogSeverity logSeverity = LogSeverity.Error)
+    parameters:
+    - id: notes
+      type: System.String
+    - id: ex
+      type: System.Exception
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Sub LogError(notes As String, ex As Exception, logSeverity As LogSeverity = LogSeverity.Error)
+  overload: DotNetHelper_Logger.Interface.ILogger.LogError*
+- uid: DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  commentId: E:DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  id: OnUnHandledException
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: OnUnHandledException
+  nameWithType: ILogger.OnUnHandledException
+  fullName: DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnUnHandledException
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 32
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: event EventHandler<UnhandledExceptionEventArgs> OnUnHandledException
+    return:
+      type: System.EventHandler{System.UnhandledExceptionEventArgs}
+    content.vb: Event OnUnHandledException As EventHandler(Of UnhandledExceptionEventArgs)
+- uid: DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  commentId: E:DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  id: OnProcessExit
+  parent: DotNetHelper_Logger.Interface.ILogger
+  langs:
+  - csharp
+  - vb
+  name: OnProcessExit
+  nameWithType: ILogger.OnProcessExit
+  fullName: DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Interface/ILogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnProcessExit
+    path: ../src/DotNetHelper-Logger/Interface/ILogger.cs
+    startLine: 34
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Interface
+  syntax:
+    content: event EventHandler<EventArgs> OnProcessExit
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event OnProcessExit As EventHandler(Of EventArgs)
+references:
+- uid: DotNetHelper_Logger.Interface
+  commentId: N:DotNetHelper_Logger.Interface
+  name: DotNetHelper_Logger.Interface
+  nameWithType: DotNetHelper_Logger.Interface
+  fullName: DotNetHelper_Logger.Interface
+- uid: System.EventHandler{System.Exception}
+  commentId: T:System.EventHandler{System.Exception}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<Exception>
+  nameWithType: EventHandler<Exception>
+  fullName: System.EventHandler<System.Exception>
+  nameWithType.vb: EventHandler(Of Exception)
+  fullName.vb: System.EventHandler(Of System.Exception)
+  name.vb: EventHandler(Of Exception)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable*
+  commentId: Overload:DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  name: IsLoggingEnable
+  nameWithType: ILogger.IsLoggingEnable
+  fullName: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DotNetHelper_Logger.Interface.ILogger.LogError*
+  commentId: Overload:DotNetHelper_Logger.Interface.ILogger.LogError
+  name: LogError
+  nameWithType: ILogger.LogError
+  fullName: DotNetHelper_Logger.Interface.ILogger.LogError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DotNetHelper_Logger.LogSeverity
+  commentId: T:DotNetHelper_Logger.LogSeverity
+  parent: DotNetHelper_Logger
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: DotNetHelper_Logger.LogSeverity
+- uid: DotNetHelper_Logger
+  commentId: N:DotNetHelper_Logger
+  name: DotNetHelper_Logger
+  nameWithType: DotNetHelper_Logger
+  fullName: DotNetHelper_Logger
+- uid: DotNetHelper_Logger.Interface.ILogger.Log*
+  commentId: Overload:DotNetHelper_Logger.Interface.ILogger.Log
+  name: Log
+  nameWithType: ILogger.Log
+  fullName: DotNetHelper_Logger.Interface.ILogger.Log
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog*
+  commentId: Overload:DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog
+  name: ConsoleAndLog
+  nameWithType: ILogger.ConsoleAndLog
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite*
+  commentId: Overload:DotNetHelper_Logger.Interface.ILogger.ConsoleWrite
+  name: ConsoleWrite
+  nameWithType: ILogger.ConsoleWrite
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite
+- uid: System.EventHandler{System.UnhandledExceptionEventArgs}
+  commentId: T:System.EventHandler{System.UnhandledExceptionEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<UnhandledExceptionEventArgs>
+  nameWithType: EventHandler<UnhandledExceptionEventArgs>
+  fullName: System.EventHandler<System.UnhandledExceptionEventArgs>
+  nameWithType.vb: EventHandler(Of UnhandledExceptionEventArgs)
+  fullName.vb: System.EventHandler(Of System.UnhandledExceptionEventArgs)
+  name.vb: EventHandler(Of UnhandledExceptionEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UnhandledExceptionEventArgs
+    name: UnhandledExceptionEventArgs
+    nameWithType: UnhandledExceptionEventArgs
+    fullName: System.UnhandledExceptionEventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UnhandledExceptionEventArgs
+    name: UnhandledExceptionEventArgs
+    nameWithType: UnhandledExceptionEventArgs
+    fullName: System.UnhandledExceptionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

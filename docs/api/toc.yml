@@ -1,0 +1,24 @@
+### YamlMime:TableOfContent
+- uid: DotNetHelper_Logger
+  name: DotNetHelper_Logger
+  items:
+  - uid: DotNetHelper_Logger.EventLogger
+    name: EventLogger
+  - uid: DotNetHelper_Logger.EventLogSource
+    name: EventLogSource
+  - uid: DotNetHelper_Logger.FileLogger
+    name: FileLogger
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+- uid: DotNetHelper_Logger.Helper
+  name: DotNetHelper_Logger.Helper
+  items:
+  - uid: DotNetHelper_Logger.Helper.ExceptionHelper
+    name: ExceptionHelper
+- uid: DotNetHelper_Logger.Interface
+  name: DotNetHelper_Logger.Interface
+  items:
+  - uid: DotNetHelper_Logger.Interface.IFileLogger
+    name: IFileLogger
+  - uid: DotNetHelper_Logger.Interface.ILogger
+    name: ILogger

@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger
+  commentId: N:DotNetHelper_Logger
+  id: DotNetHelper_Logger
+  children:
+  - DotNetHelper_Logger.EventLogger
+  - DotNetHelper_Logger.EventLogSource
+  - DotNetHelper_Logger.FileLogger
+  - DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_Logger
+  nameWithType: DotNetHelper_Logger
+  fullName: DotNetHelper_Logger
+  type: Namespace
+  assemblies:
+  - DotNetHelper-Logger
+references:
+- uid: DotNetHelper_Logger.EventLogSource
+  commentId: T:DotNetHelper_Logger.EventLogSource
+  parent: DotNetHelper_Logger
+  name: EventLogSource
+  nameWithType: EventLogSource
+  fullName: DotNetHelper_Logger.EventLogSource
+- uid: DotNetHelper_Logger.EventLogger
+  commentId: T:DotNetHelper_Logger.EventLogger
+  name: EventLogger
+  nameWithType: EventLogger
+  fullName: DotNetHelper_Logger.EventLogger
+- uid: DotNetHelper_Logger.FileLogger
+  commentId: T:DotNetHelper_Logger.FileLogger
+  name: FileLogger
+  nameWithType: FileLogger
+  fullName: DotNetHelper_Logger.FileLogger
+- uid: DotNetHelper_Logger.LogSeverity
+  commentId: T:DotNetHelper_Logger.LogSeverity
+  parent: DotNetHelper_Logger
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: DotNetHelper_Logger.LogSeverity
+- uid: DotNetHelper_Logger
+  commentId: N:DotNetHelper_Logger
+  name: DotNetHelper_Logger
+  nameWithType: DotNetHelper_Logger
+  fullName: DotNetHelper_Logger

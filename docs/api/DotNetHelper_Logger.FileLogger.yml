@@ -1,0 +1,2245 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.FileLogger
+  commentId: T:DotNetHelper_Logger.FileLogger
+  id: FileLogger
+  parent: DotNetHelper_Logger
+  children:
+  - DotNetHelper_Logger.FileLogger.#ctor
+  - DotNetHelper_Logger.FileLogger.#ctor(System.String,System.String)
+  - DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.DebugWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.Encoding
+  - DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable
+  - DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile
+  - DotNetHelper_Logger.FileLogger.IsLoggingEnable
+  - DotNetHelper_Logger.FileLogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  - DotNetHelper_Logger.FileLogger.LogFile
+  - DotNetHelper_Logger.FileLogger.MaxFileSize
+  - DotNetHelper_Logger.FileLogger.MaxLifespan
+  - DotNetHelper_Logger.FileLogger.MaxLifespanReached
+  - DotNetHelper_Logger.FileLogger.MaxSizeReached
+  - DotNetHelper_Logger.FileLogger.OnFailedLogAttempt
+  - DotNetHelper_Logger.FileLogger.OnMaxLifespanReached(DotNetHelper_IO.FileObject)
+  - DotNetHelper_Logger.FileLogger.OnMaxSizeReached(DotNetHelper_IO.FileObject)
+  - DotNetHelper_Logger.FileLogger.OnProcessExit
+  - DotNetHelper_Logger.FileLogger.OnUnHandledException
+  - DotNetHelper_Logger.FileLogger.Prefix
+  - DotNetHelper_Logger.FileLogger.TruncateOnAppStart
+  langs:
+  - csharp
+  - vb
+  name: FileLogger
+  nameWithType: FileLogger
+  fullName: DotNetHelper_Logger.FileLogger
+  type: Class
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: FileLogger
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 32
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nClass TheMoFaDeDI.Logger\n"
+  example: []
+  syntax:
+    content: 'public class FileLogger : IFileLogger, ILogger'
+    content.vb: >-
+      Public Class FileLogger
+          Implements IFileLogger, ILogger
+  inheritance:
+  - System.Object
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger
+  - DotNetHelper_Logger.Interface.ILogger
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DotNetHelper_Logger.FileLogger.Encoding
+  commentId: P:DotNetHelper_Logger.FileLogger.Encoding
+  id: Encoding
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  nameWithType: FileLogger.Encoding
+  fullName: DotNetHelper_Logger.FileLogger.Encoding
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Encoding
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 36
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public Encoding Encoding { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public Property Encoding As Encoding
+  overload: DotNetHelper_Logger.FileLogger.Encoding*
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.Encoding
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.Prefix
+  commentId: P:DotNetHelper_Logger.FileLogger.Prefix
+  id: Prefix
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Prefix
+  nameWithType: FileLogger.Prefix
+  fullName: DotNetHelper_Logger.FileLogger.Prefix
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Prefix
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 40
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nwe use a function because if your prefix include DateTime.Now the value with be static therefore we invoke a function that returns a string\n"
+  example: []
+  syntax:
+    content: public Func<string> Prefix { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.String}
+    content.vb: Public Property Prefix As Func(Of String)
+  overload: DotNetHelper_Logger.FileLogger.Prefix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.MaxFileSize
+  commentId: P:DotNetHelper_Logger.FileLogger.MaxFileSize
+  id: MaxFileSize
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: MaxFileSize
+  nameWithType: FileLogger.MaxFileSize
+  fullName: DotNetHelper_Logger.FileLogger.MaxFileSize
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: MaxFileSize
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 47
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nMax Size In Bytes That Log Files Are Allow To Reach. Anything Zero Or Less Will Be Consider Infinite. Defaults To 10 MB\n"
+  remarks: DEFAULT IS 10000000 which is 10 MB
+  example: []
+  syntax:
+    content: public long MaxFileSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property MaxFileSize As Long
+  overload: DotNetHelper_Logger.FileLogger.MaxFileSize*
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.MaxFileSize
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.MaxLifespan
+  commentId: P:DotNetHelper_Logger.FileLogger.MaxLifespan
+  id: MaxLifespan
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: MaxLifespan
+  nameWithType: FileLogger.MaxLifespan
+  fullName: DotNetHelper_Logger.FileLogger.MaxLifespan
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: MaxLifespan
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 55
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nif set invokes onMaxCreatedInterval\n"
+  remarks: DEFAULT IS NULL
+  example: []
+  syntax:
+    content: public TimeSpan? MaxLifespan { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property MaxLifespan As TimeSpan?
+  overload: DotNetHelper_Logger.FileLogger.MaxLifespan*
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.MaxLifespan
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.MaxLifespanReached
+  commentId: E:DotNetHelper_Logger.FileLogger.MaxLifespanReached
+  id: MaxLifespanReached
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: MaxLifespanReached
+  nameWithType: FileLogger.MaxLifespanReached
+  fullName: DotNetHelper_Logger.FileLogger.MaxLifespanReached
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: MaxLifespanReached
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 59
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public event EventHandler<FileObject> MaxLifespanReached
+    return:
+      type: System.EventHandler{DotNetHelper_IO.FileObject}
+    content.vb: Public Event MaxLifespanReached As EventHandler(Of FileObject)
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.MaxLifespanReached
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.MaxSizeReached
+  commentId: E:DotNetHelper_Logger.FileLogger.MaxSizeReached
+  id: MaxSizeReached
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: MaxSizeReached
+  nameWithType: FileLogger.MaxSizeReached
+  fullName: DotNetHelper_Logger.FileLogger.MaxSizeReached
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: MaxSizeReached
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 60
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public event EventHandler<FileObject> MaxSizeReached
+    return:
+      type: System.EventHandler{DotNetHelper_IO.FileObject}
+    content.vb: Public Event MaxSizeReached As EventHandler(Of FileObject)
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.MaxSizeReached
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.OnFailedLogAttempt
+  commentId: E:DotNetHelper_Logger.FileLogger.OnFailedLogAttempt
+  id: OnFailedLogAttempt
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: OnFailedLogAttempt
+  nameWithType: FileLogger.OnFailedLogAttempt
+  fullName: DotNetHelper_Logger.FileLogger.OnFailedLogAttempt
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnFailedLogAttempt
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 61
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public event EventHandler<Exception> OnFailedLogAttempt
+    return:
+      type: System.EventHandler{System.Exception}
+    content.vb: Public Event OnFailedLogAttempt As EventHandler(Of Exception)
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.OnUnHandledException
+  commentId: E:DotNetHelper_Logger.FileLogger.OnUnHandledException
+  id: OnUnHandledException
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: OnUnHandledException
+  nameWithType: FileLogger.OnUnHandledException
+  fullName: DotNetHelper_Logger.FileLogger.OnUnHandledException
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnUnHandledException
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 62
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public event EventHandler<UnhandledExceptionEventArgs> OnUnHandledException
+    return:
+      type: System.EventHandler{System.UnhandledExceptionEventArgs}
+    content.vb: Public Event OnUnHandledException As EventHandler(Of UnhandledExceptionEventArgs)
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.OnProcessExit
+  commentId: E:DotNetHelper_Logger.FileLogger.OnProcessExit
+  id: OnProcessExit
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: OnProcessExit
+  nameWithType: FileLogger.OnProcessExit
+  fullName: DotNetHelper_Logger.FileLogger.OnProcessExit
+  type: Event
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnProcessExit
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 63
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public event EventHandler<EventArgs> OnProcessExit
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event OnProcessExit As EventHandler(Of EventArgs)
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.IsLoggingEnable
+  commentId: P:DotNetHelper_Logger.FileLogger.IsLoggingEnable
+  id: IsLoggingEnable
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: IsLoggingEnable
+  nameWithType: FileLogger.IsLoggingEnable
+  fullName: DotNetHelper_Logger.FileLogger.IsLoggingEnable
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: IsLoggingEnable
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 67
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public bool IsLoggingEnable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLoggingEnable As Boolean
+  overload: DotNetHelper_Logger.FileLogger.IsLoggingEnable*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.LogFile
+  commentId: P:DotNetHelper_Logger.FileLogger.LogFile
+  id: LogFile
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: LogFile
+  nameWithType: FileLogger.LogFile
+  fullName: DotNetHelper_Logger.FileLogger.LogFile
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: LogFile
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 72
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nName Self Explanatory\n"
+  example: []
+  syntax:
+    content: public FileObject LogFile { get; set; }
+    parameters: []
+    return:
+      type: DotNetHelper_IO.FileObject
+    content.vb: Public Property LogFile As FileObject
+  overload: DotNetHelper_Logger.FileLogger.LogFile*
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.LogFile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile
+  commentId: P:DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile
+  id: ErrorsOnlyLogFile
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: ErrorsOnlyLogFile
+  nameWithType: FileLogger.ErrorsOnlyLogFile
+  fullName: DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ErrorsOnlyLogFile
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 78
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nName Self Explanatory\n"
+  example: []
+  syntax:
+    content: public FileObject ErrorsOnlyLogFile { get; set; }
+    parameters: []
+    return:
+      type: DotNetHelper_IO.FileObject
+    content.vb: Public Property ErrorsOnlyLogFile As FileObject
+  overload: DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile*
+  implements:
+  - DotNetHelper_Logger.Interface.IFileLogger.ErrorsOnlyLogFile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable
+  commentId: P:DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable
+  id: ErrorsOnlyFileEnable
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: ErrorsOnlyFileEnable
+  nameWithType: FileLogger.ErrorsOnlyFileEnable
+  fullName: DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ErrorsOnlyFileEnable
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 87
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nIf True Any Logged Errors That Is Executed Will Go To An Additional Log File Containing Only Errors \n"
+  remarks: Default is true
+  example: []
+  syntax:
+    content: public bool ErrorsOnlyFileEnable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ErrorsOnlyFileEnable As Boolean
+  overload: DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.TruncateOnAppStart
+  commentId: P:DotNetHelper_Logger.FileLogger.TruncateOnAppStart
+  id: TruncateOnAppStart
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: TruncateOnAppStart
+  nameWithType: FileLogger.TruncateOnAppStart
+  fullName: DotNetHelper_Logger.FileLogger.TruncateOnAppStart
+  type: Property
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: TruncateOnAppStart
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 94
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nTruncate All Logs On Application Start\n"
+  example: []
+  syntax:
+    content: public bool TruncateOnAppStart { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TruncateOnAppStart As Boolean
+  overload: DotNetHelper_Logger.FileLogger.TruncateOnAppStart*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.#ctor
+  commentId: M:DotNetHelper_Logger.FileLogger.#ctor
+  id: '#ctor'
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: FileLogger()
+  nameWithType: FileLogger.FileLogger()
+  fullName: DotNetHelper_Logger.FileLogger.FileLogger()
+  type: Constructor
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: .ctor
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 155
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public FileLogger()
+    content.vb: Public Sub New
+  overload: DotNetHelper_Logger.FileLogger.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.#ctor(System.String,System.String)
+  commentId: M:DotNetHelper_Logger.FileLogger.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: FileLogger(String, String)
+  nameWithType: FileLogger.FileLogger(String, String)
+  fullName: DotNetHelper_Logger.FileLogger.FileLogger(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: .ctor
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 162
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public FileLogger(string logFileFullPath, string errorsOnlyFileFullPath)
+    parameters:
+    - id: logFileFullPath
+      type: System.String
+    - id: errorsOnlyFileFullPath
+      type: System.String
+    content.vb: Public Sub New(logFileFullPath As String, errorsOnlyFileFullPath As String)
+  overload: DotNetHelper_Logger.FileLogger.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  id: Log(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Log(String, LogSeverity)
+  nameWithType: FileLogger.Log(String, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.Log(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Log
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 255
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nLogs the content to the log file \n"
+  example: []
+  syntax:
+    content: public void Log(string content, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: content
+      type: System.String
+      description: ''
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+      description: ''
+    content.vb: Public Sub Log(content As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.FileLogger.Log*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  id: LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: LogError(Exception, LogSeverity)
+  nameWithType: FileLogger.LogError(Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.LogError(System.Exception, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: LogError
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 275
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nLogs the exception to the log file\n"
+  example: []
+  syntax:
+    content: public void LogError(Exception ex, LogSeverity logSeverity = LogSeverity.Error)
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: ''
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+      description: ''
+    content.vb: Public Sub LogError(ex As Exception, logSeverity As LogSeverity = LogSeverity.Error)
+  overload: DotNetHelper_Logger.FileLogger.LogError*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  id: LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: LogError(String, Exception, LogSeverity)
+  nameWithType: FileLogger.LogError(String, Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.LogError(System.String, System.Exception, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: LogError
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 301
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nLogs the exception to the log file \n"
+  example: []
+  syntax:
+    content: public void LogError(string notes, Exception ex, LogSeverity logSeverity = LogSeverity.Error)
+    parameters:
+    - id: notes
+      type: System.String
+      description: 'notes that will be logged prior to logging the exception '
+    - id: ex
+      type: System.Exception
+      description: ''
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+      description: ''
+    content.vb: Public Sub LogError(notes As String, ex As Exception, logSeverity As LogSeverity = LogSeverity.Error)
+  overload: DotNetHelper_Logger.FileLogger.LogError*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.DebugWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.DebugWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  id: DebugWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: DebugWrite(String, LogSeverity)
+  nameWithType: FileLogger.DebugWrite(String, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.DebugWrite(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: DebugWrite
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 343
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nWrites the message to the Diagnostic output\n"
+  example: []
+  syntax:
+    content: public void DebugWrite(string message, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+      description: ''
+    content.vb: Public Sub DebugWrite(message As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.FileLogger.DebugWrite*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  id: ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: ConsoleWrite(String, LogSeverity)
+  nameWithType: FileLogger.ConsoleWrite(String, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.ConsoleWrite(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ConsoleWrite
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 353
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nWrites the message to the console \n"
+  example: []
+  syntax:
+    content: public void ConsoleWrite(string message, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+      description: ''
+    content.vb: Public Sub ConsoleWrite(message As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.FileLogger.ConsoleWrite*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  id: ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: ConsoleAndLog(String, LogSeverity)
+  nameWithType: FileLogger.ConsoleAndLog(String, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.String, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ConsoleAndLog
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 363
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  summary: "\nWrites the message to the console and log file\n"
+  example: []
+  syntax:
+    content: public void ConsoleAndLog(string message, LogSeverity logSeverity = LogSeverity.Information)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+      description: ''
+    content.vb: Public Sub ConsoleAndLog(message As String, logSeverity As LogSeverity = LogSeverity.Information)
+  overload: DotNetHelper_Logger.FileLogger.ConsoleAndLog*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  id: ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: ConsoleAndLog(Exception, LogSeverity)
+  nameWithType: FileLogger.ConsoleAndLog(Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.Exception, DotNetHelper_Logger.LogSeverity)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ConsoleAndLog
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 369
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public void ConsoleAndLog(Exception error, LogSeverity logSeverity = LogSeverity.Error)
+    parameters:
+    - id: error
+      type: System.Exception
+    - id: logSeverity
+      type: DotNetHelper_Logger.LogSeverity
+    content.vb: Public Sub ConsoleAndLog(error As Exception, logSeverity As LogSeverity = LogSeverity.Error)
+  overload: DotNetHelper_Logger.FileLogger.ConsoleAndLog*
+  implements:
+  - DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DotNetHelper_Logger.FileLogger.OnMaxSizeReached(DotNetHelper_IO.FileObject)
+  commentId: M:DotNetHelper_Logger.FileLogger.OnMaxSizeReached(DotNetHelper_IO.FileObject)
+  id: OnMaxSizeReached(DotNetHelper_IO.FileObject)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: OnMaxSizeReached(FileObject)
+  nameWithType: FileLogger.OnMaxSizeReached(FileObject)
+  fullName: DotNetHelper_Logger.FileLogger.OnMaxSizeReached(DotNetHelper_IO.FileObject)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnMaxSizeReached
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 396
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: protected virtual void OnMaxSizeReached(FileObject file)
+    parameters:
+    - id: file
+      type: DotNetHelper_IO.FileObject
+    content.vb: Protected Overridable Sub OnMaxSizeReached(file As FileObject)
+  overload: DotNetHelper_Logger.FileLogger.OnMaxSizeReached*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: DotNetHelper_Logger.FileLogger.OnMaxLifespanReached(DotNetHelper_IO.FileObject)
+  commentId: M:DotNetHelper_Logger.FileLogger.OnMaxLifespanReached(DotNetHelper_IO.FileObject)
+  id: OnMaxLifespanReached(DotNetHelper_IO.FileObject)
+  parent: DotNetHelper_Logger.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: OnMaxLifespanReached(FileObject)
+  nameWithType: FileLogger.OnMaxLifespanReached(FileObject)
+  fullName: DotNetHelper_Logger.FileLogger.OnMaxLifespanReached(DotNetHelper_IO.FileObject)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/FileLogger.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: OnMaxLifespanReached
+    path: ../src/DotNetHelper-Logger/FileLogger.cs
+    startLine: 401
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: protected virtual void OnMaxLifespanReached(FileObject file)
+    parameters:
+    - id: file
+      type: DotNetHelper_IO.FileObject
+    content.vb: Protected Overridable Sub OnMaxLifespanReached(file As FileObject)
+  overload: DotNetHelper_Logger.FileLogger.OnMaxLifespanReached*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: DotNetHelper_Logger
+  commentId: N:DotNetHelper_Logger
+  name: DotNetHelper_Logger
+  nameWithType: DotNetHelper_Logger
+  fullName: DotNetHelper_Logger
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DotNetHelper_Logger.Interface.IFileLogger
+  commentId: T:DotNetHelper_Logger.Interface.IFileLogger
+  parent: DotNetHelper_Logger.Interface
+  name: IFileLogger
+  nameWithType: IFileLogger
+  fullName: DotNetHelper_Logger.Interface.IFileLogger
+- uid: DotNetHelper_Logger.Interface.ILogger
+  commentId: T:DotNetHelper_Logger.Interface.ILogger
+  parent: DotNetHelper_Logger.Interface
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DotNetHelper_Logger.Interface.ILogger
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetHelper_Logger.Interface
+  commentId: N:DotNetHelper_Logger.Interface
+  name: DotNetHelper_Logger.Interface
+  nameWithType: DotNetHelper_Logger.Interface
+  fullName: DotNetHelper_Logger.Interface
+- uid: DotNetHelper_Logger.FileLogger.Encoding*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.Encoding
+  name: Encoding
+  nameWithType: FileLogger.Encoding
+  fullName: DotNetHelper_Logger.FileLogger.Encoding
+- uid: DotNetHelper_Logger.Interface.IFileLogger.Encoding
+  commentId: P:DotNetHelper_Logger.Interface.IFileLogger.Encoding
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: Encoding
+  nameWithType: IFileLogger.Encoding
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.Encoding
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: DotNetHelper_Logger.FileLogger.Prefix*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.Prefix
+  name: Prefix
+  nameWithType: FileLogger.Prefix
+  fullName: DotNetHelper_Logger.FileLogger.Prefix
+- uid: System.Func{System.String}
+  commentId: T:System.Func{System.String}
+  parent: System
+  definition: System.Func`1
+  name: Func<String>
+  nameWithType: Func<String>
+  fullName: System.Func<System.String>
+  nameWithType.vb: Func(Of String)
+  fullName.vb: System.Func(Of System.String)
+  name.vb: Func(Of String)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.FileLogger.MaxFileSize*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.MaxFileSize
+  name: MaxFileSize
+  nameWithType: FileLogger.MaxFileSize
+  fullName: DotNetHelper_Logger.FileLogger.MaxFileSize
+- uid: DotNetHelper_Logger.Interface.IFileLogger.MaxFileSize
+  commentId: P:DotNetHelper_Logger.Interface.IFileLogger.MaxFileSize
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: MaxFileSize
+  nameWithType: IFileLogger.MaxFileSize
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.MaxFileSize
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: DotNetHelper_Logger.FileLogger.MaxLifespan*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.MaxLifespan
+  name: MaxLifespan
+  nameWithType: FileLogger.MaxLifespan
+  fullName: DotNetHelper_Logger.FileLogger.MaxLifespan
+- uid: DotNetHelper_Logger.Interface.IFileLogger.MaxLifespan
+  commentId: P:DotNetHelper_Logger.Interface.IFileLogger.MaxLifespan
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: MaxLifespan
+  nameWithType: IFileLogger.MaxLifespan
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.MaxLifespan
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<System.TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of System.TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.Interface.IFileLogger.MaxLifespanReached
+  commentId: E:DotNetHelper_Logger.Interface.IFileLogger.MaxLifespanReached
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: MaxLifespanReached
+  nameWithType: IFileLogger.MaxLifespanReached
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.MaxLifespanReached
+- uid: System.EventHandler{DotNetHelper_IO.FileObject}
+  commentId: T:System.EventHandler{DotNetHelper_IO.FileObject}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<FileObject>
+  nameWithType: EventHandler<FileObject>
+  fullName: System.EventHandler<DotNetHelper_IO.FileObject>
+  nameWithType.vb: EventHandler(Of FileObject)
+  fullName.vb: System.EventHandler(Of DotNetHelper_IO.FileObject)
+  name.vb: EventHandler(Of FileObject)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DotNetHelper_IO.FileObject
+    name: FileObject
+    nameWithType: FileObject
+    fullName: DotNetHelper_IO.FileObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DotNetHelper_IO.FileObject
+    name: FileObject
+    nameWithType: FileObject
+    fullName: DotNetHelper_IO.FileObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.Interface.IFileLogger.MaxSizeReached
+  commentId: E:DotNetHelper_Logger.Interface.IFileLogger.MaxSizeReached
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: MaxSizeReached
+  nameWithType: IFileLogger.MaxSizeReached
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.MaxSizeReached
+- uid: DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  commentId: E:DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+  parent: DotNetHelper_Logger.Interface.ILogger
+  name: OnFailedLogAttempt
+  nameWithType: ILogger.OnFailedLogAttempt
+  fullName: DotNetHelper_Logger.Interface.ILogger.OnFailedLogAttempt
+- uid: System.EventHandler{System.Exception}
+  commentId: T:System.EventHandler{System.Exception}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<Exception>
+  nameWithType: EventHandler<Exception>
+  fullName: System.EventHandler<System.Exception>
+  nameWithType.vb: EventHandler(Of Exception)
+  fullName.vb: System.EventHandler(Of System.Exception)
+  name.vb: EventHandler(Of Exception)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  commentId: E:DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+  parent: DotNetHelper_Logger.Interface.ILogger
+  name: OnUnHandledException
+  nameWithType: ILogger.OnUnHandledException
+  fullName: DotNetHelper_Logger.Interface.ILogger.OnUnHandledException
+- uid: System.EventHandler{System.UnhandledExceptionEventArgs}
+  commentId: T:System.EventHandler{System.UnhandledExceptionEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<UnhandledExceptionEventArgs>
+  nameWithType: EventHandler<UnhandledExceptionEventArgs>
+  fullName: System.EventHandler<System.UnhandledExceptionEventArgs>
+  nameWithType.vb: EventHandler(Of UnhandledExceptionEventArgs)
+  fullName.vb: System.EventHandler(Of System.UnhandledExceptionEventArgs)
+  name.vb: EventHandler(Of UnhandledExceptionEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UnhandledExceptionEventArgs
+    name: UnhandledExceptionEventArgs
+    nameWithType: UnhandledExceptionEventArgs
+    fullName: System.UnhandledExceptionEventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UnhandledExceptionEventArgs
+    name: UnhandledExceptionEventArgs
+    nameWithType: UnhandledExceptionEventArgs
+    fullName: System.UnhandledExceptionEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  commentId: E:DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+  parent: DotNetHelper_Logger.Interface.ILogger
+  name: OnProcessExit
+  nameWithType: ILogger.OnProcessExit
+  fullName: DotNetHelper_Logger.Interface.ILogger.OnProcessExit
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.FileLogger.IsLoggingEnable*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.IsLoggingEnable
+  name: IsLoggingEnable
+  nameWithType: FileLogger.IsLoggingEnable
+  fullName: DotNetHelper_Logger.FileLogger.IsLoggingEnable
+- uid: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  commentId: P:DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+  parent: DotNetHelper_Logger.Interface.ILogger
+  name: IsLoggingEnable
+  nameWithType: ILogger.IsLoggingEnable
+  fullName: DotNetHelper_Logger.Interface.ILogger.IsLoggingEnable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DotNetHelper_Logger.FileLogger.LogFile*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.LogFile
+  name: LogFile
+  nameWithType: FileLogger.LogFile
+  fullName: DotNetHelper_Logger.FileLogger.LogFile
+- uid: DotNetHelper_Logger.Interface.IFileLogger.LogFile
+  commentId: P:DotNetHelper_Logger.Interface.IFileLogger.LogFile
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: LogFile
+  nameWithType: IFileLogger.LogFile
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.LogFile
+- uid: DotNetHelper_IO.FileObject
+  commentId: T:DotNetHelper_IO.FileObject
+  parent: DotNetHelper_IO
+  isExternal: true
+  name: FileObject
+  nameWithType: FileObject
+  fullName: DotNetHelper_IO.FileObject
+- uid: DotNetHelper_IO
+  commentId: N:DotNetHelper_IO
+  isExternal: true
+  name: DotNetHelper_IO
+  nameWithType: DotNetHelper_IO
+  fullName: DotNetHelper_IO
+- uid: DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile
+  name: ErrorsOnlyLogFile
+  nameWithType: FileLogger.ErrorsOnlyLogFile
+  fullName: DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile
+- uid: DotNetHelper_Logger.Interface.IFileLogger.ErrorsOnlyLogFile
+  commentId: P:DotNetHelper_Logger.Interface.IFileLogger.ErrorsOnlyLogFile
+  parent: DotNetHelper_Logger.Interface.IFileLogger
+  name: ErrorsOnlyLogFile
+  nameWithType: IFileLogger.ErrorsOnlyLogFile
+  fullName: DotNetHelper_Logger.Interface.IFileLogger.ErrorsOnlyLogFile
+- uid: DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable
+  name: ErrorsOnlyFileEnable
+  nameWithType: FileLogger.ErrorsOnlyFileEnable
+  fullName: DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable
+- uid: DotNetHelper_Logger.FileLogger.TruncateOnAppStart*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.TruncateOnAppStart
+  name: TruncateOnAppStart
+  nameWithType: FileLogger.TruncateOnAppStart
+  fullName: DotNetHelper_Logger.FileLogger.TruncateOnAppStart
+- uid: DotNetHelper_Logger.FileLogger.#ctor*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.#ctor
+  name: FileLogger
+  nameWithType: FileLogger.FileLogger
+  fullName: DotNetHelper_Logger.FileLogger.FileLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DotNetHelper_Logger.FileLogger.Log*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.Log
+  name: Log
+  nameWithType: FileLogger.Log
+  fullName: DotNetHelper_Logger.FileLogger.Log
+- uid: DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  isExternal: true
+  name: Log(String, LogSeverity)
+  nameWithType: ILogger.Log(String, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.Log(System.String, DotNetHelper_Logger.LogSeverity)
+  spec.csharp:
+  - uid: DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+    name: Log
+    nameWithType: ILogger.Log
+    fullName: DotNetHelper_Logger.Interface.ILogger.Log
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_Logger.Interface.ILogger.Log(System.String,DotNetHelper_Logger.LogSeverity)
+    name: Log
+    nameWithType: ILogger.Log
+    fullName: DotNetHelper_Logger.Interface.ILogger.Log
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.LogSeverity
+  commentId: T:DotNetHelper_Logger.LogSeverity
+  parent: DotNetHelper_Logger
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: DotNetHelper_Logger.LogSeverity
+- uid: DotNetHelper_Logger.FileLogger.LogError*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.LogError
+  name: LogError
+  nameWithType: FileLogger.LogError
+  fullName: DotNetHelper_Logger.FileLogger.LogError
+- uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  isExternal: true
+  name: LogError(Exception, LogSeverity)
+  nameWithType: ILogger.LogError(Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception, DotNetHelper_Logger.LogSeverity)
+  spec.csharp:
+  - uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+    name: LogError
+    nameWithType: ILogger.LogError
+    fullName: DotNetHelper_Logger.Interface.ILogger.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)
+    name: LogError
+    nameWithType: ILogger.LogError
+    fullName: DotNetHelper_Logger.Interface.ILogger.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  isExternal: true
+  name: LogError(String, Exception, LogSeverity)
+  nameWithType: ILogger.LogError(String, Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.LogError(System.String, System.Exception, DotNetHelper_Logger.LogSeverity)
+  spec.csharp:
+  - uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+    name: LogError
+    nameWithType: ILogger.LogError
+    fullName: DotNetHelper_Logger.Interface.ILogger.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_Logger.Interface.ILogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)
+    name: LogError
+    nameWithType: ILogger.LogError
+    fullName: DotNetHelper_Logger.Interface.ILogger.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.FileLogger.DebugWrite*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.DebugWrite
+  name: DebugWrite
+  nameWithType: FileLogger.DebugWrite
+  fullName: DotNetHelper_Logger.FileLogger.DebugWrite
+- uid: DotNetHelper_Logger.FileLogger.ConsoleWrite*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.ConsoleWrite
+  name: ConsoleWrite
+  nameWithType: FileLogger.ConsoleWrite
+  fullName: DotNetHelper_Logger.FileLogger.ConsoleWrite
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  isExternal: true
+  name: ConsoleWrite(String, LogSeverity)
+  nameWithType: ILogger.ConsoleWrite(String, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String, DotNetHelper_Logger.LogSeverity)
+  spec.csharp:
+  - uid: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+    name: ConsoleWrite
+    nameWithType: ILogger.ConsoleWrite
+    fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)
+    name: ConsoleWrite
+    nameWithType: ILogger.ConsoleWrite
+    fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleWrite
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.FileLogger.ConsoleAndLog*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.ConsoleAndLog
+  name: ConsoleAndLog
+  nameWithType: FileLogger.ConsoleAndLog
+  fullName: DotNetHelper_Logger.FileLogger.ConsoleAndLog
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  isExternal: true
+  name: ConsoleAndLog(String, LogSeverity)
+  nameWithType: ILogger.ConsoleAndLog(String, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String, DotNetHelper_Logger.LogSeverity)
+  spec.csharp:
+  - uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+    name: ConsoleAndLog
+    nameWithType: ILogger.ConsoleAndLog
+    fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)
+    name: ConsoleAndLog
+    nameWithType: ILogger.ConsoleAndLog
+    fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  commentId: M:DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+  parent: DotNetHelper_Logger.Interface.ILogger
+  isExternal: true
+  name: ConsoleAndLog(Exception, LogSeverity)
+  nameWithType: ILogger.ConsoleAndLog(Exception, LogSeverity)
+  fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception, DotNetHelper_Logger.LogSeverity)
+  spec.csharp:
+  - uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+    name: ConsoleAndLog
+    nameWithType: ILogger.ConsoleAndLog
+    fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)
+    name: ConsoleAndLog
+    nameWithType: ILogger.ConsoleAndLog
+    fullName: DotNetHelper_Logger.Interface.ILogger.ConsoleAndLog
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DotNetHelper_Logger.LogSeverity
+    name: LogSeverity
+    nameWithType: LogSeverity
+    fullName: DotNetHelper_Logger.LogSeverity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper_Logger.FileLogger.OnMaxSizeReached*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.OnMaxSizeReached
+  name: OnMaxSizeReached
+  nameWithType: FileLogger.OnMaxSizeReached
+  fullName: DotNetHelper_Logger.FileLogger.OnMaxSizeReached
+- uid: DotNetHelper_Logger.FileLogger.OnMaxLifespanReached*
+  commentId: Overload:DotNetHelper_Logger.FileLogger.OnMaxLifespanReached
+  name: OnMaxLifespanReached
+  nameWithType: FileLogger.OnMaxLifespanReached
+  fullName: DotNetHelper_Logger.FileLogger.OnMaxLifespanReached

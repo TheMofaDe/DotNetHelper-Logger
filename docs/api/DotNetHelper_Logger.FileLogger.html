@@ -1,0 +1,1065 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileLogger
+   | DotNetHelper-Logger </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileLogger
+   | DotNetHelper-Logger ">
+    <meta name="generator" content="docfx 2.41.0.0">
+    
+    <link rel="shortcut icon" href="../logo/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../articles/sample.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/DotNetHelper_Logger.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="DotNetHelper_Logger.html" title="DotNetHelper_Logger" class="">DotNetHelper_Logger</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="DotNetHelper_Logger.EventLogger.html" title="EventLogger" class="">EventLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="DotNetHelper_Logger.EventLogSource.html" title="EventLogSource" class="">EventLogSource</a>
+                          </li>
+                          <li class="active">
+                            <a href="DotNetHelper_Logger.FileLogger.html" title="FileLogger" class="active">FileLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="DotNetHelper_Logger.LogSeverity.html" title="LogSeverity" class="">LogSeverity</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="DotNetHelper_Logger.Helper.html" title="DotNetHelper_Logger.Helper" class="">DotNetHelper_Logger.Helper</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="DotNetHelper_Logger.Helper.ExceptionHelper.html" title="ExceptionHelper" class="">ExceptionHelper</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="DotNetHelper_Logger.Interface.html" title="DotNetHelper_Logger.Interface" class="">DotNetHelper_Logger.Interface</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="DotNetHelper_Logger.Interface.IFileLogger.html" title="IFileLogger" class="">IFileLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="DotNetHelper_Logger.Interface.ILogger.html" title="ILogger" class="">ILogger</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetHelper_Logger.FileLogger">
+  
+  
+  <h1 id="DotNetHelper_Logger_FileLogger" data-uid="DotNetHelper_Logger.FileLogger" class="text-break">Class FileLogger
+  </h1>
+  <div class="markdown level0 summary"><p>Class TheMoFaDeDI.Logger</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">FileLogger</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DotNetHelper_Logger.Interface.IFileLogger.html">IFileLogger</a></div>
+    <div><a class="xref" href="DotNetHelper_Logger.Interface.ILogger.html">ILogger</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetHelper_Logger.html">DotNetHelper_Logger</a></h6>
+  <h6><strong>Assembly</strong>: DotNetHelper-Logger.dll</h6>
+  <h5 id="DotNetHelper_Logger_FileLogger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileLogger : IFileLogger, ILogger</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger__ctor.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L156">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger__ctor_" data-uid="DotNetHelper_Logger.FileLogger.#ctor*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger__ctor" data-uid="DotNetHelper_Logger.FileLogger.#ctor">FileLogger()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileLogger()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L163">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger__ctor_" data-uid="DotNetHelper_Logger.FileLogger.#ctor*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger__ctor_System_String_System_String_" data-uid="DotNetHelper_Logger.FileLogger.#ctor(System.String,System.String)">FileLogger(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileLogger(string logFileFullPath, string errorsOnlyFileFullPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">logFileFullPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">errorsOnlyFileFullPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_Encoding.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.Encoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L37">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_Encoding_" data-uid="DotNetHelper_Logger.FileLogger.Encoding*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_Encoding" data-uid="DotNetHelper_Logger.FileLogger.Encoding">Encoding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Encoding Encoding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_ErrorsOnlyFileEnable.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L88">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_ErrorsOnlyFileEnable_" data-uid="DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_ErrorsOnlyFileEnable" data-uid="DotNetHelper_Logger.FileLogger.ErrorsOnlyFileEnable">ErrorsOnlyFileEnable</h4>
+  <div class="markdown level1 summary"><p>If True Any Logged Errors That Is Executed Will Go To An Additional Log File Containing Only Errors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ErrorsOnlyFileEnable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DotNetHelper_Logger_FileLogger_ErrorsOnlyFileEnable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Default is true</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_ErrorsOnlyLogFile.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L79">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_ErrorsOnlyLogFile_" data-uid="DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_ErrorsOnlyLogFile" data-uid="DotNetHelper_Logger.FileLogger.ErrorsOnlyLogFile">ErrorsOnlyLogFile</h4>
+  <div class="markdown level1 summary"><p>Name Self Explanatory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileObject ErrorsOnlyLogFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetHelper_IO.FileObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_IsLoggingEnable.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.IsLoggingEnable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L68">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_IsLoggingEnable_" data-uid="DotNetHelper_Logger.FileLogger.IsLoggingEnable*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_IsLoggingEnable" data-uid="DotNetHelper_Logger.FileLogger.IsLoggingEnable">IsLoggingEnable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLoggingEnable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_LogFile.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.LogFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L73">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_LogFile_" data-uid="DotNetHelper_Logger.FileLogger.LogFile*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_LogFile" data-uid="DotNetHelper_Logger.FileLogger.LogFile">LogFile</h4>
+  <div class="markdown level1 summary"><p>Name Self Explanatory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileObject LogFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetHelper_IO.FileObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_MaxFileSize.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.MaxFileSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L48">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_MaxFileSize_" data-uid="DotNetHelper_Logger.FileLogger.MaxFileSize*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_MaxFileSize" data-uid="DotNetHelper_Logger.FileLogger.MaxFileSize">MaxFileSize</h4>
+  <div class="markdown level1 summary"><p>Max Size In Bytes That Log Files Are Allow To Reach. Anything Zero Or Less Will Be Consider Infinite. Defaults To 10 MB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaxFileSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DotNetHelper_Logger_FileLogger_MaxFileSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>DEFAULT IS 10000000 which is 10 MB</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_MaxLifespan.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.MaxLifespan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L56">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_MaxLifespan_" data-uid="DotNetHelper_Logger.FileLogger.MaxLifespan*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_MaxLifespan" data-uid="DotNetHelper_Logger.FileLogger.MaxLifespan">MaxLifespan</h4>
+  <div class="markdown level1 summary"><p>if set invokes onMaxCreatedInterval</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? MaxLifespan { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DotNetHelper_Logger_FileLogger_MaxLifespan_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>DEFAULT IS NULL</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_Prefix.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.Prefix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L41">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_Prefix_" data-uid="DotNetHelper_Logger.FileLogger.Prefix*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_Prefix" data-uid="DotNetHelper_Logger.FileLogger.Prefix">Prefix</h4>
+  <div class="markdown level1 summary"><p>we use a function because if your prefix include DateTime.Now the value with be static therefore we invoke a function that returns a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;string&gt; Prefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_TruncateOnAppStart.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.TruncateOnAppStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L95">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_TruncateOnAppStart_" data-uid="DotNetHelper_Logger.FileLogger.TruncateOnAppStart*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_TruncateOnAppStart" data-uid="DotNetHelper_Logger.FileLogger.TruncateOnAppStart">TruncateOnAppStart</h4>
+  <div class="markdown level1 summary"><p>Truncate All Logs On Application Start</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TruncateOnAppStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_ConsoleAndLog_System_Exception_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.Exception%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L370">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_ConsoleAndLog_" data-uid="DotNetHelper_Logger.FileLogger.ConsoleAndLog*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_ConsoleAndLog_System_Exception_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.Exception,DotNetHelper_Logger.LogSeverity)">ConsoleAndLog(Exception, LogSeverity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConsoleAndLog(Exception error, LogSeverity logSeverity = LogSeverity.Error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_ConsoleAndLog_System_String_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.String%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L364">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_ConsoleAndLog_" data-uid="DotNetHelper_Logger.FileLogger.ConsoleAndLog*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_ConsoleAndLog_System_String_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.ConsoleAndLog(System.String,DotNetHelper_Logger.LogSeverity)">ConsoleAndLog(String, LogSeverity)</h4>
+  <div class="markdown level1 summary"><p>Writes the message to the console and log file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConsoleAndLog(string message, LogSeverity logSeverity = LogSeverity.Information)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_ConsoleWrite_System_String_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.ConsoleWrite(System.String%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L354">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_ConsoleWrite_" data-uid="DotNetHelper_Logger.FileLogger.ConsoleWrite*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_ConsoleWrite_System_String_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.ConsoleWrite(System.String,DotNetHelper_Logger.LogSeverity)">ConsoleWrite(String, LogSeverity)</h4>
+  <div class="markdown level1 summary"><p>Writes the message to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConsoleWrite(string message, LogSeverity logSeverity = LogSeverity.Information)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_DebugWrite_System_String_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.DebugWrite(System.String%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L344">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_DebugWrite_" data-uid="DotNetHelper_Logger.FileLogger.DebugWrite*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_DebugWrite_System_String_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.DebugWrite(System.String,DotNetHelper_Logger.LogSeverity)">DebugWrite(String, LogSeverity)</h4>
+  <div class="markdown level1 summary"><p>Writes the message to the Diagnostic output</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DebugWrite(string message, LogSeverity logSeverity = LogSeverity.Information)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_Log_System_String_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.Log(System.String%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L256">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_Log_" data-uid="DotNetHelper_Logger.FileLogger.Log*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_Log_System_String_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.Log(System.String,DotNetHelper_Logger.LogSeverity)">Log(String, LogSeverity)</h4>
+  <div class="markdown level1 summary"><p>Logs the content to the log file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(string content, LogSeverity logSeverity = LogSeverity.Information)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_LogError_System_Exception_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.LogError(System.Exception%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L276">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_LogError_" data-uid="DotNetHelper_Logger.FileLogger.LogError*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_LogError_System_Exception_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.LogError(System.Exception,DotNetHelper_Logger.LogSeverity)">LogError(Exception, LogSeverity)</h4>
+  <div class="markdown level1 summary"><p>Logs the exception to the log file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogError(Exception ex, LogSeverity logSeverity = LogSeverity.Error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_LogError_System_String_System_Exception_DotNetHelper_Logger_LogSeverity_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.LogError(System.String%2CSystem.Exception%2CDotNetHelper_Logger.LogSeverity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L302">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_LogError_" data-uid="DotNetHelper_Logger.FileLogger.LogError*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_LogError_System_String_System_Exception_DotNetHelper_Logger_LogSeverity_" data-uid="DotNetHelper_Logger.FileLogger.LogError(System.String,System.Exception,DotNetHelper_Logger.LogSeverity)">LogError(String, Exception, LogSeverity)</h4>
+  <div class="markdown level1 summary"><p>Logs the exception to the log file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogError(string notes, Exception ex, LogSeverity logSeverity = LogSeverity.Error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">notes</span></td>
+        <td><p>notes that will be logged prior to logging the exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DotNetHelper_Logger.LogSeverity.html">LogSeverity</a></td>
+        <td><span class="parametername">logSeverity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_OnMaxLifespanReached_DotNetHelper_IO_FileObject_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.OnMaxLifespanReached(DotNetHelper_IO.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L402">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_OnMaxLifespanReached_" data-uid="DotNetHelper_Logger.FileLogger.OnMaxLifespanReached*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_OnMaxLifespanReached_DotNetHelper_IO_FileObject_" data-uid="DotNetHelper_Logger.FileLogger.OnMaxLifespanReached(DotNetHelper_IO.FileObject)">OnMaxLifespanReached(FileObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMaxLifespanReached(FileObject file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetHelper_IO.FileObject</span></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_OnMaxSizeReached_DotNetHelper_IO_FileObject_.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.OnMaxSizeReached(DotNetHelper_IO.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L397">View Source</a>
+  </span>
+  <a id="DotNetHelper_Logger_FileLogger_OnMaxSizeReached_" data-uid="DotNetHelper_Logger.FileLogger.OnMaxSizeReached*"></a>
+  <h4 id="DotNetHelper_Logger_FileLogger_OnMaxSizeReached_DotNetHelper_IO_FileObject_" data-uid="DotNetHelper_Logger.FileLogger.OnMaxSizeReached(DotNetHelper_IO.FileObject)">OnMaxSizeReached(FileObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMaxSizeReached(FileObject file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetHelper_IO.FileObject</span></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_MaxLifespanReached.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.MaxLifespanReached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L60">View Source</a>
+  </span>
+  <h4 id="DotNetHelper_Logger_FileLogger_MaxLifespanReached" data-uid="DotNetHelper_Logger.FileLogger.MaxLifespanReached">MaxLifespanReached</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FileObject&gt; MaxLifespanReached</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<span class="xref">DotNetHelper_IO.FileObject</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_MaxSizeReached.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.MaxSizeReached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L61">View Source</a>
+  </span>
+  <h4 id="DotNetHelper_Logger_FileLogger_MaxSizeReached" data-uid="DotNetHelper_Logger.FileLogger.MaxSizeReached">MaxSizeReached</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FileObject&gt; MaxSizeReached</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<span class="xref">DotNetHelper_IO.FileObject</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_OnFailedLogAttempt.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.OnFailedLogAttempt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L62">View Source</a>
+  </span>
+  <h4 id="DotNetHelper_Logger_FileLogger_OnFailedLogAttempt" data-uid="DotNetHelper_Logger.FileLogger.OnFailedLogAttempt">OnFailedLogAttempt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Exception&gt; OnFailedLogAttempt</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_OnProcessExit.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.OnProcessExit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L64">View Source</a>
+  </span>
+  <h4 id="DotNetHelper_Logger_FileLogger_OnProcessExit" data-uid="DotNetHelper_Logger.FileLogger.OnProcessExit">OnProcessExit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; OnProcessExit</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger_OnUnHandledException.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger.OnUnHandledException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L63">View Source</a>
+  </span>
+  <h4 id="DotNetHelper_Logger_FileLogger_OnUnHandledException" data-uid="DotNetHelper_Logger.FileLogger.OnUnHandledException">OnUnHandledException</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UnhandledExceptionEventArgs&gt; OnUnHandledException</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unhandledexceptioneventargs">UnhandledExceptionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DotNetHelper_Logger.Interface.IFileLogger.html">IFileLogger</a>
+  </div>
+  <div>
+      <a class="xref" href="DotNetHelper_Logger.Interface.ILogger.html">ILogger</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/new/master/apiSpec/new?filename=DotNetHelper_Logger_FileLogger.md&amp;value=---%0Auid%3A%20DotNetHelper_Logger.FileLogger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/TheMofaDe/DotNetHelper-Logger/blob/master/src/DotNetHelper-Logger/FileLogger.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright � 2019 Joseph McNeal Jr
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

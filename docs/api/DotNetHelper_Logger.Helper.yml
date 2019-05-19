@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.Helper
+  commentId: N:DotNetHelper_Logger.Helper
+  id: DotNetHelper_Logger.Helper
+  children:
+  - DotNetHelper_Logger.Helper.ExceptionHelper
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper_Logger.Helper
+  nameWithType: DotNetHelper_Logger.Helper
+  fullName: DotNetHelper_Logger.Helper
+  type: Namespace
+  assemblies:
+  - DotNetHelper-Logger
+references:
+- uid: DotNetHelper_Logger.Helper.ExceptionHelper
+  commentId: T:DotNetHelper_Logger.Helper.ExceptionHelper
+  name: ExceptionHelper
+  nameWithType: ExceptionHelper
+  fullName: DotNetHelper_Logger.Helper.ExceptionHelper

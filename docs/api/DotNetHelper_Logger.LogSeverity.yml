@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.LogSeverity
+  commentId: T:DotNetHelper_Logger.LogSeverity
+  id: LogSeverity
+  parent: DotNetHelper_Logger
+  children:
+  - DotNetHelper_Logger.LogSeverity.Debug
+  - DotNetHelper_Logger.LogSeverity.Error
+  - DotNetHelper_Logger.LogSeverity.Fatal
+  - DotNetHelper_Logger.LogSeverity.Information
+  - DotNetHelper_Logger.LogSeverity.Trace
+  - DotNetHelper_Logger.LogSeverity.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: DotNetHelper_Logger.LogSeverity
+  type: Enum
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: LogSeverity
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 6
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: public enum LogSeverity
+    content.vb: Public Enum LogSeverity
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DotNetHelper_Logger.LogSeverity.Trace
+  commentId: F:DotNetHelper_Logger.LogSeverity.Trace
+  id: Trace
+  parent: DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: LogSeverity.Trace
+  fullName: DotNetHelper_Logger.LogSeverity.Trace
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Trace
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Trace = 0
+    return:
+      type: DotNetHelper_Logger.LogSeverity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.LogSeverity.Debug
+  commentId: F:DotNetHelper_Logger.LogSeverity.Debug
+  id: Debug
+  parent: DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LogSeverity.Debug
+  fullName: DotNetHelper_Logger.LogSeverity.Debug
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Debug
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Debug = 1
+    return:
+      type: DotNetHelper_Logger.LogSeverity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.LogSeverity.Information
+  commentId: F:DotNetHelper_Logger.LogSeverity.Information
+  id: Information
+  parent: DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: LogSeverity.Information
+  fullName: DotNetHelper_Logger.LogSeverity.Information
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Information
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Information = 2
+    return:
+      type: DotNetHelper_Logger.LogSeverity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.LogSeverity.Warning
+  commentId: F:DotNetHelper_Logger.LogSeverity.Warning
+  id: Warning
+  parent: DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogSeverity.Warning
+  fullName: DotNetHelper_Logger.LogSeverity.Warning
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Warning
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Warning = 3
+    return:
+      type: DotNetHelper_Logger.LogSeverity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.LogSeverity.Error
+  commentId: F:DotNetHelper_Logger.LogSeverity.Error
+  id: Error
+  parent: DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogSeverity.Error
+  fullName: DotNetHelper_Logger.LogSeverity.Error
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Error
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Error = 4
+    return:
+      type: DotNetHelper_Logger.LogSeverity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DotNetHelper_Logger.LogSeverity.Fatal
+  commentId: F:DotNetHelper_Logger.LogSeverity.Fatal
+  id: Fatal
+  parent: DotNetHelper_Logger.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Fatal
+  nameWithType: LogSeverity.Fatal
+  fullName: DotNetHelper_Logger.LogSeverity.Fatal
+  type: Field
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/LogSeverity.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: Fatal
+    path: ../src/DotNetHelper-Logger/LogSeverity.cs
+    startLine: 8
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger
+  syntax:
+    content: Fatal = 5
+    return:
+      type: DotNetHelper_Logger.LogSeverity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DotNetHelper_Logger
+  commentId: N:DotNetHelper_Logger
+  name: DotNetHelper_Logger
+  nameWithType: DotNetHelper_Logger
+  fullName: DotNetHelper_Logger
+- uid: DotNetHelper_Logger.LogSeverity
+  commentId: T:DotNetHelper_Logger.LogSeverity
+  parent: DotNetHelper_Logger
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: DotNetHelper_Logger.LogSeverity

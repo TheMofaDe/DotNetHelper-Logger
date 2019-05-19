@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper_Logger.Helper.ExceptionHelper
+  commentId: T:DotNetHelper_Logger.Helper.ExceptionHelper
+  id: ExceptionHelper
+  parent: DotNetHelper_Logger.Helper
+  children:
+  - DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo(System.Exception)
+  - DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace(System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: ExceptionHelper
+  nameWithType: ExceptionHelper
+  fullName: DotNetHelper_Logger.Helper.ExceptionHelper
+  type: Class
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Helper/ExeceptionHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: ExceptionHelper
+    path: ../src/DotNetHelper-Logger/Helper/ExeceptionHelper.cs
+    startLine: 7
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Helper
+  syntax:
+    content: public static class ExceptionHelper
+    content.vb: Public Module ExceptionHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo(System.Exception)
+  commentId: M:DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo(System.Exception)
+  id: GetAllExceptionInfo(System.Exception)
+  parent: DotNetHelper_Logger.Helper.ExceptionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetAllExceptionInfo(Exception)
+  nameWithType: ExceptionHelper.GetAllExceptionInfo(Exception)
+  fullName: DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Helper/ExeceptionHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: GetAllExceptionInfo
+    path: ../src/DotNetHelper-Logger/Helper/ExeceptionHelper.cs
+    startLine: 9
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Helper
+  syntax:
+    content: public static string GetAllExceptionInfo(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetAllExceptionInfo(ex As Exception) As String
+  overload: DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace(System.Exception)
+  commentId: M:DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace(System.Exception)
+  id: GetStackTrace(System.Exception)
+  parent: DotNetHelper_Logger.Helper.ExceptionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetStackTrace(Exception)
+  nameWithType: ExceptionHelper.GetStackTrace(Exception)
+  fullName: DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper-Logger/Helper/ExeceptionHelper.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNetHelper-Logger.git
+    id: GetStackTrace
+    path: ../src/DotNetHelper-Logger/Helper/ExeceptionHelper.cs
+    startLine: 84
+  assemblies:
+  - DotNetHelper-Logger
+  namespace: DotNetHelper_Logger.Helper
+  syntax:
+    content: public static string GetStackTrace(Exception e)
+    parameters:
+    - id: e
+      type: System.Exception
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetStackTrace(e As Exception) As String
+  overload: DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DotNetHelper_Logger.Helper
+  commentId: N:DotNetHelper_Logger.Helper
+  name: DotNetHelper_Logger.Helper
+  nameWithType: DotNetHelper_Logger.Helper
+  fullName: DotNetHelper_Logger.Helper
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo*
+  commentId: Overload:DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo
+  name: GetAllExceptionInfo
+  nameWithType: ExceptionHelper.GetAllExceptionInfo
+  fullName: DotNetHelper_Logger.Helper.ExceptionHelper.GetAllExceptionInfo
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace*
+  commentId: Overload:DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace
+  name: GetStackTrace
+  nameWithType: ExceptionHelper.GetStackTrace
+  fullName: DotNetHelper_Logger.Helper.ExceptionHelper.GetStackTrace
