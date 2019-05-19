@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Reflection;
-using DotNetHelper_Logger.Helper;
+
 using DotNetHelper_Logger.Interface;
 #if NETFRAMEWORK
 using System.Diagnostics;
+using DotNetHelper_Logger.Helper;
 #endif
 namespace DotNetHelper_Logger
 {
@@ -36,11 +37,6 @@ namespace DotNetHelper_Logger
         public EventLogger()
         {
            Init();
-            //var data = new EventSourceCreationData(Source, "Application")
-            //{
-            //    MessageResourceFile = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "windowsevents.log"
-            //};
-            //EventLog.CreateEventSource(data);
         }
 
        private void Init()

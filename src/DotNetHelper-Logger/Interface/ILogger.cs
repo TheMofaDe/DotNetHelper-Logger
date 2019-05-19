@@ -14,7 +14,6 @@ namespace DotNetHelper_Logger.Interface
         event EventHandler<FileObject> MaxSizeReached;
         event EventHandler<FileObject> MaxLifespanReached;
         FileObject LogFile { get; set; } 
-        FileObject ObjectLogFile { get; set; } 
         FileObject ErrorsOnlyLogFile { get; set; } 
     }
 

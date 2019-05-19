@@ -72,10 +72,6 @@ namespace DotNetHelper_Logger
         /// </summary>
         public FileObject LogFile { get; set; }
 
-        /// <summary>
-        /// Name Self Explanatory
-        /// </summary>
-        public FileObject ObjectLogFile { get; set; }
 
         /// <summary>
         /// Name Self Explanatory
@@ -86,7 +82,7 @@ namespace DotNetHelper_Logger
 
 
         /// <summary>
-        /// If True Any Logged Errors That Is Excuted Will Go To An Additional Log File Containing Only Errors 
+        /// If True Any Logged Errors That Is Executed Will Go To An Additional Log File Containing Only Errors 
         /// </summary>
         /// <remarks>Default is true</remarks>
         public bool ErrorsOnlyFileEnable { get; set; } = true;
@@ -105,7 +101,7 @@ namespace DotNetHelper_Logger
                 {
                     LogFile.CreateOrTruncate();
                     if (ErrorsOnlyFileEnable)
-                        ErrorsOnlyLogFile.CreateOrTruncate();
+                        ErrorsOnlyLogFile?.CreateOrTruncate();
                 }
                 _TruncateOnAppStart = value;
             }
@@ -124,20 +120,16 @@ namespace DotNetHelper_Logger
             var assembly = Assembly.GetEntryAssembly() ?? Assembly.GetExecutingAssembly();
             var name = assembly?.FullName.Split(',')[0];
             return  name;
-    }
+        }
 
-
-        public FileLogger()
+        private void Init(string logFile,string errorFile)
         {
+            if(!string.IsNullOrEmpty(logFile))
+                LogFile = new FileObject(logFile);
+            if (!string.IsNullOrEmpty(errorFile))
+                ErrorsOnlyLogFile = new FileObject(errorFile);
 
 
-            var logsFolder = GetDefaultLogFolder() + "Logs" + Path.DirectorySeparatorChar;
-
-            LogFile = new FileObject($"{logsFolder}{ApplicationName}_Logs.txt");
-            ObjectLogFile = new FileObject($"{logsFolder}{ApplicationName}_ObjectLogs.txt");
-            ErrorsOnlyLogFile = new FileObject($"{logsFolder}{ApplicationName}_Errors.txt");
-
-            // CHECKPOINT
             AppDomain.CurrentDomain.UnhandledException += delegate (object sender, UnhandledExceptionEventArgs args) {
                 var ex = (Exception)args.ExceptionObject;
                 Console.WriteLine($"Exception caught by Global Exception Handler. {ex.Message}.");
@@ -151,16 +143,29 @@ namespace DotNetHelper_Logger
                 OnProcessExit?.Invoke(sender, args);
             };
 
-         
+
 
             if (_TruncateOnAppStart == null && TruncateOnAppStart == true)
             {
-                LogFile.CreateOrTruncate();
+                LogFile?.CreateOrTruncate();
                 if (ErrorsOnlyFileEnable)
-                    ErrorsOnlyLogFile.CreateOrTruncate();
+                    ErrorsOnlyLogFile?.CreateOrTruncate();
             }
-            
         }
+
+        public FileLogger()
+        {
+            var logsFolder = GetDefaultLogFolder() + "Logs" + Path.DirectorySeparatorChar;
+            Init($"{logsFolder}{ApplicationName}_Logs.txt", $"{logsFolder}{ApplicationName}_Errors.txt");
+        }
+
+
+        public FileLogger(string logFileFullPath,string errorsOnlyFileFullPath)
+        {
+            var logsFolder = GetDefaultLogFolder() + "Logs" + Path.DirectorySeparatorChar;
+            Init(logFileFullPath, errorsOnlyFileFullPath);
+        }
+
 
 
 
@@ -208,43 +213,30 @@ namespace DotNetHelper_Logger
 
 
         /// <summary>
-        /// Checks if loggings is enabled and whether or not the file should be deleted or purge based on configurations 
+        /// Checks if logging is enabled and whether or not the file should be deleted or purge based on configurations 
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
         private bool CheckRequirements(FileObject file)
         {
             if (!IsLoggingEnable) return false;
+            if (file == null) return false;
             file.RefreshObject();
-
             if (file.Exist == false)
             {
-
                 file.CreateOrTruncate();
-
             }
-
             if (MaxLifespan != null && DateTime.Now - file.CreationTime.GetValueOrDefault(DateTime.Now) > MaxLifespan.Value)
             {
-                OnMaxLifespanReached(file);
-                // Log($"Previous Logs has been delete due to the business logic being set to truncate every {DeleteOnTimeSpan.Value.Days} Days {DeleteOnTimeSpan.Value.Hours} Hours  & {DeleteOnTimeSpan.Value.Minutes}  Minutes");
+                OnMaxLifespanReached(file);            
             }
             if (MaxFileSize <= 0 || !File.Exists(file.FullFilePath))
             {
                 return true;
             }
-
             if (MaxFileSize <= file.FileSize)
             {
                 OnMaxSizeReached(file);
-                //if (DeleteOnMaxSizeReach)
-                //{
-                //    file.CreateOrTruncate();
-                //}
-                //else
-                //{
-                // //   Console.WriteLine($"Warning :: Log File {file.FullFilePath} Has Reach Max Capacity. Could Not Log Content To File Please Take Action Or Configure Your Application Source To Handle This Senario");
-                //} 
                 return false;
             }
             else
@@ -299,7 +291,6 @@ namespace DotNetHelper_Logger
             {
                 OnFailedLogAttempt?.Invoke(this, error);
             }
-
         }
 
         /// <summary>
@@ -310,7 +301,6 @@ namespace DotNetHelper_Logger
         /// <param name="logSeverity"></param>
         public void LogError(string notes, Exception ex, LogSeverity logSeverity = LogSeverity.Error)
         {
-
             var currentError = ex;
             var i = 0;
 
@@ -346,8 +336,6 @@ namespace DotNetHelper_Logger
 
         }
 
-
-
         /// <summary>
         /// Writes the message to the Diagnostic output
         /// </summary>
@@ -357,7 +345,6 @@ namespace DotNetHelper_Logger
         {
             System.Diagnostics.Debug.WriteLine(message);
         }
-
 
         /// <summary>
         /// Writes the message to the console 
@@ -401,9 +388,6 @@ namespace DotNetHelper_Logger
             return !string.IsNullOrEmpty(a)
                 ? $"{Prefix?.Invoke()} {a}"
                 : $"{Prefix?.Invoke()} NULL";
-            //return !string.IsNullOrEmpty(a)
-            //	? $"{DateTime.Now}   Application Name - {ApplicationName} AppVersion - {App.ApplicationVersion}  Device - {DeviceInformation.Model} {DeviceInformation.MachineName}  OS - {DeviceInformation.Version}   -------------  A Developer Left Logging : {a}"
-            //	: $"{DateTime.Now}   Application Name - {ApplicationName} AppVersion - {App.ApplicationVersion}  Device - {DeviceInformation.Model} {DeviceInformation.MachineName}  OS - {DeviceInformation.Version}   -------------   A Developer Decided To Log A NULL/EMPTY Object SMH";
         }
 
 
